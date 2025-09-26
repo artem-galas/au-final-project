@@ -23,6 +23,11 @@ const config: HardhatUserConfig = {
       },
     },
   },
+  verify: {
+    etherscan: {
+      apiKey: configVariable("ETHERSCAN_API_KEY"),
+    },
+  },
   networks: {
     hardhatMainnet: {
       type: "edr-simulated",
